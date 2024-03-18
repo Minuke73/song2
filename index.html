@@ -11,7 +11,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="authoring-tool" content="Adobe_Animate_CC">
-<title>3학년_1_10p_어깨동무_20240310</title>
+<title>3학년_1_10p_어깨동무_20240317</title>
 <!-- write your code here -->
 <style>
   #animation_container, #_preload_div_ {
@@ -557,7 +557,7 @@ if (reversed == null) { reversed = false; }
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-545,39.9,70,70);
 // stage content:
-(lib._3학년_1_10p_어깨동무_20240310 = function(mode,startPosition,loop,reversed) {
+(lib._3학년_1_10p_어깨동무_20240317 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = false; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -567,7 +567,7 @@ if (reversed == null) { reversed = false; }
 	props.loop = loop;
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
-	this.actionFrames = [0,637,638,1284,1285,2383,2384,3026];
+	this.actionFrames = [0,636,637,638,1283,1284,1285,2382,2383,2384,3026];
 	this.streamSoundSymbolsList[0] = [{id:"stos_student",startFrame:0,endFrame:638,loop:1,offset:0}];
 	this.streamSoundSymbolsList[638] = [{id:"stos_expert",startFrame:638,endFrame:1285,loop:1,offset:0}];
 	this.streamSoundSymbolsList[1285] = [{id:"stos_singtosong",startFrame:1285,endFrame:2384,loop:1,offset:0}];
@@ -622,6 +622,10 @@ if (reversed == null) { reversed = false; }
 			_this.play_btn.visible = true;
 		});
 	}
+	this.frame_636 = function() {
+		this.gotoAndStop('노래듣기');
+		this.play_btn.visible = true;
+	}
 	this.frame_637 = function() {
 		this.gotoAndStop('노래듣기');
 		this.play_btn.visible = true;
@@ -631,6 +635,10 @@ if (reversed == null) { reversed = false; }
 		this.InsertIntoSoundStreamData(soundInstance,638,1285,1);
 		this.stop();
 	}
+	this.frame_1283 = function() {
+		this.gotoAndStop('전문가창');
+		this.play_btn.visible = true;
+	}
 	this.frame_1284 = function() {
 		this.gotoAndStop('전문가창');
 		this.play_btn.visible = true;
@@ -639,6 +647,10 @@ if (reversed == null) { reversed = false; }
 		var soundInstance = playSound("stos_singtosong",0);
 		this.InsertIntoSoundStreamData(soundInstance,1285,2384,1);
 		this.stop();
+	}
+	this.frame_2382 = function() {
+		this.gotoAndStop('따라부르');
+		this.play_btn.visible = true;
 	}
 	this.frame_2383 = function() {
 		this.gotoAndStop('따라부르');
@@ -654,7 +666,7 @@ if (reversed == null) { reversed = false; }
 		this.play_btn.visible = true;
 	}
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(637).call(this.frame_637).wait(1).call(this.frame_638).wait(646).call(this.frame_1284).wait(1).call(this.frame_1285).wait(1098).call(this.frame_2383).wait(1).call(this.frame_2384).wait(642).call(this.frame_3026).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(636).call(this.frame_636).wait(1).call(this.frame_637).wait(1).call(this.frame_638).wait(645).call(this.frame_1283).wait(1).call(this.frame_1284).wait(1).call(this.frame_1285).wait(1097).call(this.frame_2382).wait(1).call(this.frame_2383).wait(1).call(this.frame_2384).wait(642).call(this.frame_3026).wait(1));
 	// chapter_no
 	this.instance = new lib.main_no("single",0);
 	this.instance.setTransform(55.55,75.25,1,1,0,0,0,30.4,30.4);
@@ -2942,7 +2954,7 @@ function handleComplete(evt,comp) {
 	var preloaderDiv = document.getElementById("_preload_div_");
 	preloaderDiv.style.display = 'none';
 	canvas.style.display = 'block';
-	exportRoot = new lib._3학년_1_10p_어깨동무_20240310();
+	exportRoot = new lib._3학년_1_10p_어깨동무_20240317();
 	stage = new lib.Stage(canvas);
 	stage.enableMouseOver();	
 	//Registers the "tick" event listener.
